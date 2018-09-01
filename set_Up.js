@@ -20,7 +20,7 @@ inp.class("input");inprem.class("input");sel.class("bord");
   sel.option('red');sel.option('blue');sel.option('green');
 
   b=new ball(width/2,height/2,3,4);
-  sq=new ball(50,50,random(5),random(5));
+  sq=new sqs(50,50,random(5),random(5));
 for(let j=0;j<15;j++){
 let btemp=new ball(random(width),random(height),-4+random(8),-5+random(10));
   bs.push(btemp);
@@ -55,10 +55,11 @@ function chgbk(){
 
 function chgcol(){
  let tempint=0;
+ if(inp.value()==1){
   for(let j=0;j<bs.length;j++){
-   if(inp.value()==j){bs[j].col=sel.value();}
-  }
-
+    bs[j].col=color(100,100,100);
+}
+}
 }
 
 function remball(){
