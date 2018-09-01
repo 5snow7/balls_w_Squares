@@ -1,9 +1,10 @@
 let b,can,sl,p,sel,col,inp,inprem,newx,par_color,sq;
 let bs=[];let qs=[];
-
+let snow;
 function setup() {
   set_Up();
-
+snow=select("#jump");snow.position(150,550);
+snow.class("input");
 }
 
 function draw() {
@@ -16,6 +17,8 @@ for(let j=bs.length-1;j>0;j--){
 for(let j=qs.length-1;j>0;j--){
  qs[j].move();qs[j].chbd();qs[j].show();qs[j].coll(bs);//bs[j].coll(qs);
 }
-rect(30,30,40,40);
+fill(200,200,0);rect(30,30,40,40);
+fill(0,0,200);ellipse(60,60,10,50);
+
 
 }
