@@ -17,7 +17,7 @@ for(let j=bs.length-1;j>-1;j--){
 for(let j=qs.length-1;j>-1;j--){
  qs[j].move();qs[j].chbd();qs[j].show();qs[j].coll(bs);//bs[j].coll(qs);
 }
-fill(200,200,0);rect(30,30,40,40);
+fill(200,200,0);rect(50+random(20),50+random(20),40,40);
 fill(0,0,200);ellipse(50+random(20),50+random(20),10,50);
 
 
