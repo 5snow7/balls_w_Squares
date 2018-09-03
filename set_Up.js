@@ -69,10 +69,9 @@ if(inprem.value()==j){bs.splice(j,1);}
 }
 
 function colls(blista,blistb){
-
-for(let k=blistb.length-1;k>-1;k--){
+for(let k=0;k<blistb.length;k++){
   for(let j=blista.length-1;j>-1;j--){
-    let temp=dist(blista[j].x,blista[j].y,blistb[j].x,blistb[j].y);
+    let temp=dist(blista[j].x,blista[j].y,blistb[k].x,blistb[k].y);
     if(temp<15) {blista.splice(j,1);blistb.splice(k,1);}
   }
 }
