@@ -3,7 +3,7 @@ let bs=[];let qs=[];
 let snow;
 function setup() {
   set_Up();
-snow=select("#jump");snow.position(150,550);
+snow=select("#jump");snow.position(550,200);
 snow.class("input");
 }
 
