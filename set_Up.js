@@ -21,12 +21,14 @@ inp.class("input");inprem.class("input");sel.class("bord");
 
   b=new ball(width/2,height/2,3,4);
   sq=new sqs(50,50,random(5),random(5));
-for(let j=0;j<15;j++){
-let btemp=new ball(random(width),random(height),-4+random(8),-5+random(10));
-  bs.push(btemp);
+for(let j=0;j<25;j++){
+//let btemp=new ball(random(width),random(height),-4+random(8),-5+random(10));
+  //bs.push(btemp);
+bs.push(new ball(random(width),random(height),-4+random(8),-5+random(10)));
+
 }
 
-for(let j=0;j<15;j++){
+for(let j=0;j<25;j++){
 let stemp=new sqs(random(width),random(height),-4+random(8),-5+random(10));
   qs.push(stemp);
 }

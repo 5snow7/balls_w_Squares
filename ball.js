@@ -6,7 +6,7 @@ class ball{
    this.x=this.x+this.xsp;this.y=this.y+this.ysp;
   }
   show(){
-   fill(this.col);strokeWeight(4);stroke(0,250,0);
+   fill(this.col);strokeWeight(4);stroke(100,250,0);
     ellipse(this.x,this.y,20,20);
   }
   chbd(){
