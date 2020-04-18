@@ -8,7 +8,7 @@ snow.class("input");
 }
 
 function draw() {
-background(col);text(bs.length,20,20);
+background(col);text(bs.length,30,20);
 //b.col=color(200,0,0);b.move();b.chbd();b.show();
 //sq.move();sq.chbd();sq.show();
 for(let j=bs.length-1;j>-1;j--){
